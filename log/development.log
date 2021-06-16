@@ -202,3 +202,283 @@ Processing by PostsController#new as HTML
 Completed 200 OK in 36ms (Views: 28.9ms | ActiveRecord: 0.8ms | Allocations: 12298)
 
 
+Started GET "/" for 127.0.0.1 at 2021-06-16 12:26:21 -0500
+  [1m[35m (8.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PostsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.4ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:13
+  Rendered posts/index.html.erb within layouts/application (Duration: 11.0ms | Allocations: 1838)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in C:/Users/DELL/Code/Ruby/Members_Only_App/public/packs
+[Webpacker] Though the "loose" option was set to "false" in your @babel/preset-env config, it will not be used for @babel/plugin-proposal-private-methods since the "loose" mode option was set to "true" for @babel/plugin-proposal-class-properties.
+The "loose" option must be the same for @babel/plugin-proposal-class-properties, @babel/plugin-proposal-private-methods and @babel/plugin-proposal-private-property-in-object (when they are enabled): you can silence this warning by explicitly adding
+	["@babel/plugin-proposal-private-methods", { "loose": true }]
+to the "plugins" section of your Babel config.
+Though the "loose" option was set to "false" in your @babel/preset-env config, it will not be used for @babel/plugin-proposal-private-methods since the "loose" mode option was set to "true" for @babel/plugin-proposal-class-properties.
+The "loose" option must be the same for @babel/plugin-proposal-class-properties, @babel/plugin-proposal-private-methods and @babel/plugin-proposal-private-property-in-object (when they are enabled): you can silence this warning by explicitly adding
+	["@babel/plugin-proposal-private-methods", { "loose": true }]
+to the "plugins" section of your Babel config.
+Though the "loose" option was set to "false" in your @babel/preset-env config, it will not be used for @babel/plugin-proposal-private-methods since the "loose" mode option was set to "true" for @babel/plugin-proposal-class-properties.
+The "loose" option must be the same for @babel/plugin-proposal-class-properties, @babel/plugin-proposal-private-methods and @babel/plugin-proposal-private-property-in-object (when they are enabled): you can silence this warning by explicitly adding
+	["@babel/plugin-proposal-private-methods", { "loose": true }]
+to the "plugins" section of your Babel config.
+Though the "loose" option was set to "false" in your @babel/preset-env config, it will not be used for @babel/plugin-proposal-private-methods since the "loose" mode option was set to "true" for @babel/plugin-proposal-class-properties.
+The "loose" option must be the same for @babel/plugin-proposal-class-properties, @babel/plugin-proposal-private-methods and @babel/plugin-proposal-private-property-in-object (when they are enabled): you can silence this warning by explicitly adding
+	["@babel/plugin-proposal-private-methods", { "loose": true }]
+to the "plugins" section of your Babel config.
+Though the "loose" option was set to "false" in your @babel/preset-env config, it will not be used for @babel/plugin-proposal-private-methods since the "loose" mode option was set to "true" for @babel/plugin-proposal-class-properties.
+The "loose" option must be the same for @babel/plugin-proposal-class-properties, @babel/plugin-proposal-private-methods and @babel/plugin-proposal-private-property-in-object (when they are enabled): you can silence this warning by explicitly adding
+	["@babel/plugin-proposal-private-methods", { "loose": true }]
+to the "plugins" section of your Babel config.
+Though the "loose" option was set to "false" in your @babel/preset-env config, it will not be used for @babel/plugin-proposal-private-methods since the "loose" mode option was set to "true" for @babel/plugin-proposal-class-properties.
+The "loose" option must be the same for @babel/plugin-proposal-class-properties, @babel/plugin-proposal-private-methods and @babel/plugin-proposal-private-property-in-object (when they are enabled): you can silence this warning by explicitly adding
+	["@babel/plugin-proposal-private-methods", { "loose": true }]
+to the "plugins" section of your Babel config.
+
+[Webpacker] Hash: ce14c115e350524bb5a9
+Version: webpack 4.46.0
+Time: 7889ms
+Built at: 06/16/2021 12:26:38 PM
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-b43fa54005da8e229d8c.js    125 KiB  application  [emitted] [immutable]  application
+js/application-b43fa54005da8e229d8c.js.map    139 KiB  application  [emitted] [dev]        application
+                             manifest.json  364 bytes               [emitted]              
+Entrypoint application = js/application-b43fa54005da8e229d8c.js js/application-b43fa54005da8e229d8c.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/application.js] 492 bytes {application} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 3 hidden modules
+
+  Rendered layout layouts/application.html.erb (Duration: 17358.1ms | Allocations: 206100)
+Completed 200 OK in 17447ms (Views: 17392.2ms | ActiveRecord: 0.4ms | Allocations: 211837)
+
+
+Started GET "/" for 127.0.0.1 at 2021-06-16 12:29:43 -0500
+  [1m[35m (4.8ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PostsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.7ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:13
+  Rendered posts/index.html.erb within layouts/application (Duration: 18.7ms | Allocations: 1823)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 295.1ms | Allocations: 10174)
+Completed 200 OK in 407ms (Views: 326.4ms | ActiveRecord: 0.7ms | Allocations: 17441)
+
+
+Started GET "/posts/new" for 127.0.0.1 at 2021-06-16 12:29:50 -0500
+Processing by PostsController#new as HTML
+Completed 401 Unauthorized in 71ms (ActiveRecord: 0.0ms | Allocations: 1629)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2021-06-16 12:29:50 -0500
+Processing by Devise::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering C:/Ruby30-x64/lib/ruby/gems/3.0.0/gems/devise-4.8.0/app/views/devise/sessions/new.html.erb within layouts/application
+  Rendered C:/Ruby30-x64/lib/ruby/gems/3.0.0/gems/devise-4.8.0/app/views/devise/shared/_links.html.erb (Duration: 2.1ms | Allocations: 691)
+  Rendered C:/Ruby30-x64/lib/ruby/gems/3.0.0/gems/devise-4.8.0/app/views/devise/sessions/new.html.erb within layouts/application (Duration: 107.1ms | Allocations: 4364)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 181.4ms | Allocations: 12003)
+Completed 200 OK in 270ms (Views: 225.7ms | ActiveRecord: 2.2ms | Allocations: 19224)
+
+
+Started GET "/users/sign_up" for 127.0.0.1 at 2021-06-16 12:30:20 -0500
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering C:/Ruby30-x64/lib/ruby/gems/3.0.0/gems/devise-4.8.0/app/views/devise/registrations/new.html.erb within layouts/application
+  Rendered C:/Ruby30-x64/lib/ruby/gems/3.0.0/gems/devise-4.8.0/app/views/devise/shared/_error_messages.html.erb (Duration: 1.7ms | Allocations: 243)
+  Rendered C:/Ruby30-x64/lib/ruby/gems/3.0.0/gems/devise-4.8.0/app/views/devise/shared/_links.html.erb (Duration: 0.7ms | Allocations: 162)
+  Rendered C:/Ruby30-x64/lib/ruby/gems/3.0.0/gems/devise-4.8.0/app/views/devise/registrations/new.html.erb within layouts/application (Duration: 20.5ms | Allocations: 2132)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 136.1ms | Allocations: 9773)
+Completed 200 OK in 160ms (Views: 157.8ms | ActiveRecord: 0.0ms | Allocations: 11461)
+
+
+Started POST "/users" for 127.0.0.1 at 2021-06-16 12:30:45 -0500
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"email"=>"mario@gmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists? (0.7ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "mario@gmail.com"], ["LIMIT", 1]]
+  [1m[36mUser Create (8.7ms)[0m  [1m[32mINSERT INTO "users" ("email", "encrypted_password", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["email", "mario@gmail.com"], ["encrypted_password", "$2a$12$et5f4FJsaT6AzkDUEHK0eOQK91/Ndwn0K7O1uZBE9.R/IhRQVfIRe"], ["created_at", "2021-06-16 17:30:46.012895"], ["updated_at", "2021-06-16 17:30:46.012895"]]
+  [1m[36mTRANSACTION (6.1ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/posts/new
+Completed 302 Found in 848ms (ActiveRecord: 15.8ms | Allocations: 12892)
+
+
+Started GET "/posts/new" for 127.0.0.1 at 2021-06-16 12:30:46 -0500
+Processing by PostsController#new as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering posts/new.html.erb within layouts/application
+  Rendered posts/_form.html.erb (Duration: 3.0ms | Allocations: 804)
+  Rendered posts/new.html.erb within layouts/application (Duration: 13.5ms | Allocations: 1196)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 168.1ms | Allocations: 4838)
+Completed 200 OK in 335ms (Views: 171.4ms | ActiveRecord: 13.2ms | Allocations: 8559)
+
+
+Started POST "/posts" for 127.0.0.1 at 2021-06-16 12:30:56 -0500
+Processing by PostsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "commit"=>"Create Post"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/posts_controller.rb:27:in `block in create'
+  [1m[36mPost Create (10.3ms)[0m  [1m[32mINSERT INTO "posts" ("created_at", "updated_at") VALUES (?, ?)[0m  [["created_at", "2021-06-16 17:30:56.257491"], ["updated_at", "2021-06-16 17:30:56.257491"]]
+  ↳ app/controllers/posts_controller.rb:27:in `block in create'
+  [1m[36mTRANSACTION (19.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/posts_controller.rb:27:in `block in create'
+Redirected to http://localhost:3000/posts/1
+Completed 302 Found in 122ms (ActiveRecord: 29.7ms | Allocations: 5006)
+
+
+Started GET "/posts/1" for 127.0.0.1 at 2021-06-16 12:30:56 -0500
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"1"}
+  Rendering layout layouts/application.html.erb
+  Rendering posts/show.html.erb within layouts/application
+  Rendered posts/show.html.erb within layouts/application (Duration: 10.4ms | Allocations: 1256)
+  Rendered layout layouts/application.html.erb (Duration: 24.1ms | Allocations: 1323)
+Completed 500 Internal Server Error in 49ms (ActiveRecord: 0.0ms | Allocations: 1928)
+
+
+  
+ActionView::Template::Error (No route matches {:action=>"edit", :controller=>"posts", :id=>nil}, missing required keys: [:id]):
+    1: <p id="notice"><%= notice %></p>
+    2: 
+    3: <%= link_to 'Edit', edit_post_path(@post) %> |
+    4: <%= link_to 'Back', posts_path %>
+  
+app/views/posts/show.html.erb:3
+Started GET "/" for 127.0.0.1 at 2021-06-16 12:32:32 -0500
+Processing by PostsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.4ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:13
+  Rendered posts/index.html.erb within layouts/application (Duration: 3.9ms | Allocations: 970)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 111.8ms | Allocations: 4628)
+Completed 200 OK in 123ms (Views: 114.7ms | ActiveRecord: 0.4ms | Allocations: 5215)
+
+
+Started GET "/posts/1" for 127.0.0.1 at 2021-06-16 12:32:40 -0500
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"1"}
+  Rendering layout layouts/application.html.erb
+  Rendering posts/show.html.erb within layouts/application
+  Rendered posts/show.html.erb within layouts/application (Duration: 0.8ms | Allocations: 1098)
+  Rendered layout layouts/application.html.erb (Duration: 1.8ms | Allocations: 1164)
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.0ms | Allocations: 1608)
+
+
+  
+ActionView::Template::Error (No route matches {:action=>"edit", :controller=>"posts", :id=>nil}, missing required keys: [:id]):
+    1: <p id="notice"><%= notice %></p>
+    2: 
+    3: <%= link_to 'Edit', edit_post_path(@post) %> |
+    4: <%= link_to 'Back', posts_path %>
+  
+app/views/posts/show.html.erb:3
+Started GET "/" for 127.0.0.1 at 2021-06-16 12:32:48 -0500
+Processing by PostsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (2.7ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:13
+  Rendered posts/index.html.erb within layouts/application (Duration: 44.0ms | Allocations: 826)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 139.5ms | Allocations: 4353)
+Completed 200 OK in 143ms (Views: 139.1ms | ActiveRecord: 2.7ms | Allocations: 4842)
+
+
+Started GET "/posts/new" for 127.0.0.1 at 2021-06-16 12:32:51 -0500
+Processing by PostsController#new as HTML
+  [1m[36mUser Load (10.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering posts/new.html.erb within layouts/application
+  Rendered posts/_form.html.erb (Duration: 1.7ms | Allocations: 383)
+  Rendered posts/new.html.erb within layouts/application (Duration: 3.3ms | Allocations: 499)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 81.2ms | Allocations: 4014)
+Completed 200 OK in 149ms (Views: 111.1ms | ActiveRecord: 10.3ms | Allocations: 5668)
+
+
+Started GET "/posts" for 127.0.0.1 at 2021-06-16 12:32:55 -0500
+Processing by PostsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.4ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:13
+  Rendered posts/index.html.erb within layouts/application (Duration: 6.5ms | Allocations: 826)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 80.5ms | Allocations: 4353)
+Completed 200 OK in 84ms (Views: 82.1ms | ActiveRecord: 0.4ms | Allocations: 4845)
+
+
+Started DELETE "/posts/1" for 127.0.0.1 at 2021-06-16 12:32:59 -0500
+Processing by PostsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "id"=>"1"}
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.0ms | Allocations: 1122)
+
+
+  
+NoMethodError (undefined method `destroy' for nil:NilClass):
+  
+app/controllers/posts_controller.rb:52:in `destroy'
+Started GET "/posts" for 127.0.0.1 at 2021-06-16 12:33:23 -0500
+Processing by PostsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:13
+  Rendered posts/index.html.erb within layouts/application (Duration: 6.7ms | Allocations: 826)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 100.0ms | Allocations: 4353)
+Completed 200 OK in 104ms (Views: 102.3ms | ActiveRecord: 0.3ms | Allocations: 4842)
+
+
+Started GET "/" for 127.0.0.1 at 2021-06-16 12:33:38 -0500
+Processing by PostsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:13
+  Rendered posts/index.html.erb within layouts/application (Duration: 9.6ms | Allocations: 834)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 124.6ms | Allocations: 5627)
+Completed 200 OK in 130ms (Views: 126.6ms | ActiveRecord: 0.3ms | Allocations: 6116)
+
+
+Started GET "/new" for 127.0.0.1 at 2021-06-16 12:33:47 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/new"):
+  
+Started GET "/" for 127.0.0.1 at 2021-06-16 12:33:59 -0500
+Processing by PostsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.5ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:13
+  Rendered posts/index.html.erb within layouts/application (Duration: 56.0ms | Allocations: 943)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 406.3ms | Allocations: 16434)
+Completed 200 OK in 428ms (Views: 424.8ms | ActiveRecord: 0.5ms | Allocations: 16977)
+
+
+Started GET "/" for 127.0.0.1 at 2021-06-16 12:34:12 -0500
+Processing by PostsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.5ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:13
+  Rendered posts/index.html.erb within layouts/application (Duration: 33.8ms | Allocations: 2351)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 219.7ms | Allocations: 15574)
+Completed 200 OK in 233ms (Views: 225.5ms | ActiveRecord: 0.5ms | Allocations: 16007)
+
+
