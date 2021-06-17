@@ -14,16 +14,16 @@
       <tr>
       <td><h1><%= post.title %></h1>
 
-      <p><%= post.body %></p></td>
+      <p><%= post.body %></p>
+      <% if user_signed_in?%>
+      <p>Written by <%= current_user.email%></p>
+      <% end %></td>
         <td><%= link_to 'Show', post %></td>
         <td><%= link_to 'Edit', edit_post_path(post) %></td>
         <td><%= link_to 'Destroy', post, method: :delete, data: { confirm: 'Are you sure?' } %></td>
       </tr>
       
       
-      <tr>
-      <p><%= current_user %></p></td>
-      </tr>
     <% end %>
   </tbody>
 </table>

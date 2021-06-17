@@ -1699,3 +1699,63 @@ Processing by PostsController#index as HTML
 Completed 200 OK in 217ms (Views: 208.0ms | ActiveRecord: 2.1ms | Allocations: 21316)
 
 
+Started GET "/users/sign_out" for 127.0.0.1 at 2021-06-17 09:49:19 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/users/sign_out"):
+  
+Started GET "/users/sign_out" for 127.0.0.1 at 2021-06-17 09:50:18 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/users/sign_out"):
+  
+Started GET "/users/sign_in" for 127.0.0.1 at 2021-06-17 09:55:53 -0500
+Processing by Devise::SessionsController#new as HTML
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+Redirected to http://localhost:3000/
+Filter chain halted as :require_no_authentication rendered or redirected
+Completed 302 Found in 34ms (ActiveRecord: 2.0ms | Allocations: 2947)
+
+
+Started GET "/" for 127.0.0.1 at 2021-06-17 09:55:54 -0500
+Processing by PostsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.4ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:13
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/posts/index.html.erb:25
+  Rendered posts/index.html.erb within layouts/application (Duration: 14.8ms | Allocations: 3075)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 105.0ms | Allocations: 12690)
+Completed 200 OK in 135ms (Views: 124.8ms | ActiveRecord: 0.7ms | Allocations: 14800)
+
+
+Started GET "/" for 127.0.0.1 at 2021-06-17 10:06:27 -0500
+Processing by PostsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/index.html.erb within layouts/application
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/views/posts/index.html.erb:13
+  [1m[36mPost Load (0.5ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:13
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/posts/index.html.erb:25
+  Rendered posts/index.html.erb within layouts/application (Duration: 173.9ms | Allocations: 6236)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 432.9ms | Allocations: 26800)
+Completed 200 OK in 485ms (Views: 475.9ms | ActiveRecord: 2.6ms | Allocations: 31269)
+
+
+Started GET "/posts/new" for 127.0.0.1 at 2021-06-17 10:43:20 -0500
+Processing by PostsController#new as HTML
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mUser Load (2.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering posts/new.html.erb within layouts/application
+  Rendered posts/_form.html.erb (Duration: 24.6ms | Allocations: 1202)
+  Rendered posts/new.html.erb within layouts/application (Duration: 36.1ms | Allocations: 1569)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 118.1ms | Allocations: 5720)
+Completed 200 OK in 220ms (Views: 122.5ms | ActiveRecord: 5.8ms | Allocations: 8517)
+
+
