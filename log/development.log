@@ -2679,3 +2679,39 @@ Processing by PostsController#index as HTML
 Completed 200 OK in 109ms (Views: 106.3ms | ActiveRecord: 1.3ms | Allocations: 7844)
 
 
+Started GET "/" for 127.0.0.1 at 2021-06-17 13:09:45 -0500
+  [1m[35m (2.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PostsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.6ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:13
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/posts/index.html.erb:18
+  Rendered posts/index.html.erb within layouts/application (Duration: 152.8ms | Allocations: 11533)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 439.8ms | Allocations: 36039)
+Completed 200 OK in 540ms (Views: 479.6ms | ActiveRecord: 6.7ms | Allocations: 41311)
+
+
+Started DELETE "/users/sign_out" for 127.0.0.1 at 2021-06-17 13:09:52 -0500
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+Redirected to http://localhost:3000/
+Completed 302 Found in 139ms (ActiveRecord: 0.4ms | Allocations: 7446)
+
+
+Started GET "/" for 127.0.0.1 at 2021-06-17 13:09:52 -0500
+Processing by PostsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (1.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:13
+  Rendered posts/index.html.erb within layouts/application (Duration: 24.9ms | Allocations: 1808)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 130.8ms | Allocations: 10930)
+Completed 200 OK in 192ms (Views: 189.1ms | ActiveRecord: 1.2ms | Allocations: 11769)
+
+
