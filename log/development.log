@@ -1759,3 +1759,254 @@ Processing by PostsController#new as HTML
 Completed 200 OK in 220ms (Views: 122.5ms | ActiveRecord: 5.8ms | Allocations: 8517)
 
 
+Started POST "/posts" for 127.0.0.1 at 2021-06-17 10:44:58 -0500
+Processing by PostsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "post"=>{"title"=>"mario", "body"=>"mrwvwnirwwrwr"}, "commit"=>"Create Post"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/posts_controller.rb:29:in `block in create'
+  [1m[36mPost Create (2.5ms)[0m  [1m[32mINSERT INTO "posts" ("created_at", "updated_at", "title", "body") VALUES (?, ?, ?, ?)[0m  [["created_at", "2021-06-17 15:44:58.694987"], ["updated_at", "2021-06-17 15:44:58.694987"], ["title", "mario"], ["body", "mrwvwnirwwrwr"]]
+  ↳ app/controllers/posts_controller.rb:29:in `block in create'
+  [1m[36mTRANSACTION (8.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/posts_controller.rb:29:in `block in create'
+Redirected to http://localhost:3000/posts/7
+Completed 302 Found in 128ms (ActiveRecord: 11.6ms | Allocations: 7348)
+
+
+Started GET "/posts/7" for 127.0.0.1 at 2021-06-17 10:44:58 -0500
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"7"}
+  [1m[36mPost Load (0.8ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:11:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering posts/show.html.erb within layouts/application
+  Rendered posts/show.html.erb within layouts/application (Duration: 5.0ms | Allocations: 553)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 207.8ms | Allocations: 5780)
+Completed 200 OK in 319ms (Views: 220.7ms | ActiveRecord: 0.8ms | Allocations: 8270)
+
+
+Started GET "/posts/7/edit" for 127.0.0.1 at 2021-06-17 10:45:03 -0500
+Processing by PostsController#edit as HTML
+  Parameters: {"id"=>"7"}
+  [1m[36mPost Load (4.4ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:21:in `edit'
+  Rendering layout layouts/application.html.erb
+  Rendering posts/edit.html.erb within layouts/application
+  Rendered posts/_form.html.erb (Duration: 6.7ms | Allocations: 979)
+  Rendered posts/edit.html.erb within layouts/application (Duration: 13.2ms | Allocations: 1615)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 128.5ms | Allocations: 15950)
+Completed 200 OK in 262ms (Views: 183.0ms | ActiveRecord: 4.4ms | Allocations: 18709)
+
+
+Started PATCH "/posts/7" for 127.0.0.1 at 2021-06-17 10:45:06 -0500
+Processing by PostsController#update as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "post"=>{"title"=>"mariocc", "body"=>"mrwvwnirwwrwr"}, "commit"=>"Update Post", "id"=>"7"}
+  [1m[36mPost Load (0.9ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:41:in `update'
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/posts_controller.rb:43:in `update'
+  [1m[36mPost Update (3.4ms)[0m  [1m[33mUPDATE "posts" SET "updated_at" = ?, "title" = ? WHERE "posts"."id" = ?[0m  [["updated_at", "2021-06-17 15:45:06.988967"], ["title", "mariocc"], ["id", 7]]
+  ↳ app/controllers/posts_controller.rb:43:in `update'
+  [1m[36mTRANSACTION (14.3ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/posts_controller.rb:43:in `update'
+Redirected to http://localhost:3000/posts/7
+Completed 302 Found in 189ms (ActiveRecord: 18.8ms | Allocations: 3127)
+
+
+Started GET "/posts/7" for 127.0.0.1 at 2021-06-17 10:45:07 -0500
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"7"}
+  [1m[36mPost Load (0.4ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:11:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering posts/show.html.erb within layouts/application
+  Rendered posts/show.html.erb within layouts/application (Duration: 1.3ms | Allocations: 112)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 187.8ms | Allocations: 9088)
+Completed 200 OK in 218ms (Views: 191.0ms | ActiveRecord: 0.4ms | Allocations: 10322)
+
+
+Started GET "/posts" for 127.0.0.1 at 2021-06-17 10:45:09 -0500
+Processing by PostsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.9ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:13
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/posts/index.html.erb:25
+  Rendered posts/index.html.erb within layouts/application (Duration: 47.4ms | Allocations: 2561)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 220.3ms | Allocations: 17563)
+Completed 200 OK in 226ms (Views: 223.4ms | ActiveRecord: 1.5ms | Allocations: 18555)
+
+
+Started GET "/posts" for 127.0.0.1 at 2021-06-17 10:46:21 -0500
+Processing by PostsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.5ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:13
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/posts/index.html.erb:18
+  Rendered posts/index.html.erb within layouts/application (Duration: 158.6ms | Allocations: 6197)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 484.6ms | Allocations: 30053)
+Completed 200 OK in 592ms (Views: 571.9ms | ActiveRecord: 0.9ms | Allocations: 32175)
+
+
+Started GET "/posts" for 127.0.0.1 at 2021-06-17 10:46:52 -0500
+Processing by PostsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.7ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:13
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/posts/index.html.erb:18
+  Rendered posts/index.html.erb within layouts/application (Duration: 130.6ms | Allocations: 3104)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 423.1ms | Allocations: 13986)
+Completed 200 OK in 682ms (Views: 661.0ms | ActiveRecord: 1.5ms | Allocations: 17505)
+
+
+Started GET "/posts" for 127.0.0.1 at 2021-06-17 10:47:59 -0500
+Processing by PostsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/index.html.erb within layouts/application
+  Rendered posts/index.html.erb within layouts/application (Duration: 6.3ms | Allocations: 1357)
+  Rendered layout layouts/application.html.erb (Duration: 13.1ms | Allocations: 1430)
+Completed 500 Internal Server Error in 135ms (ActiveRecord: 0.0ms | Allocations: 2892)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <p id="notice"><%= notice %></p>
+
+<h1>Posts</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @posts.each do |post| %>
+      <tr>
+      <td><h1><%= post.title %></h1>
+
+      <p><%= post.body %></p>
+      <%= if user_signed_in?%>
+      <p>Written by <%= current_user.email%></p>
+      <%= end %></td>
+        <td><%= link_to 'Show', post %></td>
+        <td><%= link_to 'Edit', edit_post_path(post) %></td>
+        <td><%= link_to 'Destroy', post, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+      
+      
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Post', new_post_path %>
+
+):
+1:    <p id="notice"><%= notice %></p>
+2:    
+3:    <h1>Posts</h1>
+4:    
+5:    <table>
+6:      <thead>
+7:        <tr>
+8:          <th colspan="3"></th>
+9:        </tr>
+10:      </thead>
+11:    
+12:      <tbody>
+13:        <% @posts.each do |post| %>
+14:          <tr>
+15:          <td><h1><%= post.title %></h1>
+16:    
+17:          <p><%= post.body %></p>
+18:          <%= if user_signed_in?%>
+19:          <p>Written by <%= current_user.email%></p>
+20:          <%= end %></td>
+21:            <td><%= link_to 'Show', post %></td>
+22:            <td><%= link_to 'Edit', edit_post_path(post) %></td>
+23:            <td><%= link_to 'Destroy', post, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+24:          </tr>
+25:          
+26:          
+27:        <% end %>
+28:      </tbody>
+29:    </table>
+30:    
+31:    <br>
+32:    
+33:    <%= link_to 'New Post', new_post_path %>
+  
+app/views/posts/index.html.erb:18: syntax error, unexpected ')', expecting `then' or ';' or '\n'
+app/views/posts/index.html.erb:20: syntax error, unexpected `end'
+app/views/posts/index.html.erb:27: syntax error, unexpected `end', expecting ')'
+app/views/posts/index.html.erb:36: syntax error, unexpected `end', expecting ')'
+app/views/posts/index.html.erb:18: syntax error, unexpected ')', expecting `then' or ';' or '\n'
+app/views/posts/index.html.erb:20: syntax error, unexpected `end'
+app/views/posts/index.html.erb:27: syntax error, unexpected `end', expecting ')'
+app/views/posts/index.html.erb:36: syntax error, unexpected `end', expecting ')'
+app/views/posts/index.html.erb:18: syntax error, unexpected ')', expecting `then' or ';' or '\n'
+app/views/posts/index.html.erb:20: syntax error, unexpected `end'
+app/views/posts/index.html.erb:27: syntax error, unexpected `end', expecting ')'
+app/views/posts/index.html.erb:36: syntax error, unexpected `end', expecting ')'
+app/views/posts/index.html.erb:18: syntax error, unexpected ')', expecting `then' or ';' or '\n'
+app/views/posts/index.html.erb:20: syntax error, unexpected `end'
+app/views/posts/index.html.erb:27: syntax error, unexpected `end', expecting ')'
+app/views/posts/index.html.erb:36: syntax error, unexpected `end', expecting ')'
+app/views/posts/index.html.erb:18: syntax error, unexpected ')', expecting `then' or ';' or '\n'
+app/views/posts/index.html.erb:20: syntax error, unexpected `end'
+app/views/posts/index.html.erb:27: syntax error, unexpected `end', expecting ')'
+app/views/posts/index.html.erb:36: syntax error, unexpected `end', expecting ')'
+app/views/posts/index.html.erb:18: syntax error, unexpected ')', expecting `then' or ';' or '\n'
+app/views/posts/index.html.erb:20: syntax error, unexpected `end'
+app/views/posts/index.html.erb:27: syntax error, unexpected `end', expecting ')'
+app/views/posts/index.html.erb:36: syntax error, unexpected `end', expecting ')'
+Started GET "/posts" for 127.0.0.1 at 2021-06-17 10:53:24 -0500
+Processing by PostsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/index.html.erb within layouts/application
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/views/posts/index.html.erb:13
+  [1m[36mPost Load (0.4ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:13
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/posts/index.html.erb:18
+  Rendered posts/index.html.erb within layouts/application (Duration: 108.4ms | Allocations: 5019)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 236.7ms | Allocations: 12789)
+Completed 200 OK in 282ms (Views: 275.0ms | ActiveRecord: 26.3ms | Allocations: 16184)
+
+
+  [1m[35m (3.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (1.1ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/posts" for 127.0.0.1 at 2021-06-17 11:55:29 -0500
+Processing by PostsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/index.html.erb within layouts/application
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/views/posts/index.html.erb:13
+  [1m[36mPost Load (0.7ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:13
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/posts/index.html.erb:18
+  Rendered posts/index.html.erb within layouts/application (Duration: 235.8ms | Allocations: 11502)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 403.3ms | Allocations: 27414)
+Completed 200 OK in 419ms (Views: 412.8ms | ActiveRecord: 3.8ms | Allocations: 28903)
+
+
