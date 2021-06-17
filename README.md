@@ -30,8 +30,8 @@ Follow the steps below to get a local copy running:
 ### Run App
 
 - Type `bundle install` in the root directory of the project.
-- Type `rails server` in the root directory of the project.
 - Type `rails db:migrate` in the root directory of the project.
+- Type `rails server` in the root directory of the project.
 
 ## Authors
 
