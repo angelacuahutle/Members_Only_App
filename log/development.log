@@ -2604,3 +2604,78 @@ Started GET "/users/1/edit" for 127.0.0.1 at 2021-06-17 12:13:37 -0500
   
 ActionController::RoutingError (No route matches [GET] "/users/1/edit"):
   
+Started GET "/users/sign_in" for 127.0.0.1 at 2021-06-17 12:55:39 -0500
+  [1m[35m (2.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Devise::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 3.1ms | Allocations: 1350)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 216.7ms | Allocations: 19434)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 427.6ms | Allocations: 39605)
+Completed 200 OK in 563ms (Views: 481.4ms | ActiveRecord: 2.3ms | Allocations: 50587)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2021-06-17 12:55:46 -0500
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"email"=>"mario@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mUser Load (3.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["email", "mario@gmail.com"], ["LIMIT", 1]]
+Redirected to http://localhost:3000/
+Completed 302 Found in 612ms (ActiveRecord: 3.2ms | Allocations: 8144)
+
+
+Started GET "/" for 127.0.0.1 at 2021-06-17 12:55:47 -0500
+Processing by PostsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (8.7ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:13
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/posts/index.html.erb:18
+  Rendered posts/index.html.erb within layouts/application (Duration: 63.4ms | Allocations: 10728)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 174.3ms | Allocations: 19120)
+Completed 200 OK in 213ms (Views: 191.7ms | ActiveRecord: 11.6ms | Allocations: 24858)
+
+
+Started GET "/posts/new" for 127.0.0.1 at 2021-06-17 12:55:52 -0500
+Processing by PostsController#new as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering posts/new.html.erb within layouts/application
+  Rendered posts/_form.html.erb (Duration: 30.5ms | Allocations: 1641)
+  Rendered posts/new.html.erb within layouts/application (Duration: 36.6ms | Allocations: 2050)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 104.5ms | Allocations: 6276)
+Completed 200 OK in 133ms (Views: 106.2ms | ActiveRecord: 0.4ms | Allocations: 8098)
+
+
+Started POST "/posts" for 127.0.0.1 at 2021-06-17 12:55:58 -0500
+Processing by PostsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "post"=>{"title"=>"nojoj", "body"=>"jjijij"}, "commit"=>"Create Post"}
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/posts_controller.rb:30:in `block in create'
+  [1m[36mPost Create (28.8ms)[0m  [1m[32mINSERT INTO "posts" ("created_at", "updated_at", "title", "body", "author") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", "2021-06-17 17:55:58.391691"], ["updated_at", "2021-06-17 17:55:58.391691"], ["title", "nojoj"], ["body", "jjijij"], ["author", "mario@gmail.com"]]
+  ↳ app/controllers/posts_controller.rb:30:in `block in create'
+  [1m[36mTRANSACTION (7.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/posts_controller.rb:30:in `block in create'
+Redirected to http://localhost:3000/
+Completed 302 Found in 81ms (ActiveRecord: 37.0ms | Allocations: 5597)
+
+
+Started GET "/" for 127.0.0.1 at 2021-06-17 12:55:58 -0500
+Processing by PostsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.5ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:13
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/posts/index.html.erb:18
+  Rendered posts/index.html.erb within layouts/application (Duration: 31.3ms | Allocations: 2856)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 103.9ms | Allocations: 7049)
+Completed 200 OK in 109ms (Views: 106.3ms | ActiveRecord: 1.3ms | Allocations: 7844)
+
+
