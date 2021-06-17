@@ -1,5 +1,4 @@
 class PostsController < ApplicationController
-  before_action :authenticate_user!, only: %i[new create]
 
   # GET /posts or /posts.json
   def index
@@ -13,6 +12,7 @@ class PostsController < ApplicationController
 
   # GET /posts/new
   def new
+    helpers.signed_in_only
     @post = Post.new
   end
 
@@ -66,6 +66,6 @@ class PostsController < ApplicationController
   # Only allow a list of trusted parameters through.
 
   def post_params
-    params.require(:post).permit(:title, :body)
+    params.require(:post).permit(:title, :body, :user_id)
   end
 end
