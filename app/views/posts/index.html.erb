@@ -31,9 +31,4 @@
 <br>
 
 <%= link_to 'New Post', new_post_path %>
-<% if user_signed_in?%>
-<%= link_to 'Sign Out', destroy_user_session_path, method: :delete %>
-<% else %>
-<%= link_to 'Sign In', new_user_session_path %>
-<%= link_to 'New User', new_user_registration_path %>
-<% end%>
+<%=  sign_in_out %>

@@ -23,8 +23,11 @@ class PostsController < ApplicationController
 
   # POST /posts or /posts.json
   def create
+    helpers.signed_in_only
     @post = Post.new(post_params)
     @post.author = current_user.email
+    @post.user_id=current_user.id
+
 
     respond_to do |format|
       if @post.save
@@ -40,6 +43,7 @@ class PostsController < ApplicationController
   # PATCH/PUT /posts/1 or /posts/1.json
   def update
     @post = Post.find(params[:id])
+    @post.user_id=current_user.id
 
     if @post.update(post_params)
       redirect_to @post
@@ -66,6 +70,6 @@ class PostsController < ApplicationController
   # Only allow a list of trusted parameters through.
 
   def post_params
-    params.require(:post).permit(:title, :body, :user_id)
+    params.require(:post).permit(:title, :body)
   end
 end
