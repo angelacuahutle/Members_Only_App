@@ -16,7 +16,7 @@
 
       <p><%= post.body %></p>
       <% if user_signed_in?%>
-      <p>Written by <%= current_user.email%></p>
+      <p>Written by <%= post.author%></p>
       <% end %></td>
         <td><%= link_to 'Show', post %></td>
         <td><%= link_to 'Edit', edit_post_path(post) %></td>
@@ -32,6 +32,9 @@
 <br>
 
 <%= link_to 'New Post', new_post_path %>
+<% if user_signed_in?%>
 <%= link_to 'Sign Out', destroy_user_session_path, method: :delete %>
+<% else %>
 <%= link_to 'Sign In', new_user_session_path %>
 <%= link_to 'New User', new_user_registration_path %>
+<% end%>
