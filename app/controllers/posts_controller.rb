@@ -1,5 +1,4 @@
 class PostsController < ApplicationController
-
   # GET /posts or /posts.json
   def index
     @posts = Post.all
@@ -26,8 +25,7 @@ class PostsController < ApplicationController
     helpers.signed_in_only
     @post = Post.new(post_params)
     @post.author = current_user.email
-    @post.user_id=current_user.id
-
+    @post.user_id = current_user.id
 
     respond_to do |format|
       if @post.save
@@ -43,7 +41,7 @@ class PostsController < ApplicationController
   # PATCH/PUT /posts/1 or /posts/1.json
   def update
     @post = Post.find(params[:id])
-    @post.user_id=current_user.id
+    @post.user_id = current_user.id
 
     if @post.update(post_params)
       redirect_to @post
